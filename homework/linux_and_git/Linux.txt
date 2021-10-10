@@ -1,0 +1,134 @@
+Linux
+1. Create `linux_lecture` directory and notes.txt file
+
+samb1s7@PCubuntu:~$ mkdir linux_lecture
+samb1s7@PCubuntu:~$ touch notes.txt
+
+2. Copy notes.txt file to linux_lecture directory
+
+samb1s7@PCubuntu:~$ cp notes.txt linux_lecture/
+
+3. List the files in the current directory, in “long listing format”.
+total 24
+
+drwxrwxr-x  4 samb1s7 samb1s7 4096 вер 19 23:03 .
+drwxrwxr-x 20 samb1s7 samb1s7 4096 вер 20 01:34 ..
+drwxrwxr-x  3 samb1s7 samb1s7 4096 вер 20 01:15 cursor_git
+-rwxrwxrwx  1 samb1s7 samb1s7   42 вер 19 22:56 homework.sh
+-rw-rw-r--  1 samb1s7 samb1s7    0 вер 19 21:51 hw1.sh
+-rw-rw-r--  1 samb1s7 samb1s7    0 вер 19 21:50 hw1.txt
+-rw-rw-r--  1 samb1s7 samb1s7    0 вер 19 21:51 hw.sh
+drwxrwxr-x  2 samb1s7 samb1s7 4096 вер 19 22:01 lecture_new
+-rwxrwxr-x  1 samb1s7 samb1s7    3 вер 19 23:01 notes.sh
+
+4. List all files, including hidden files, in the your home (~) directory, in reverse alphabetical order and long listing format.
+total 116
+
+drwxrwxr-x  2 samb1s7 samb1s7 4096 вер 19 19:59 Videos
+-rw-r-----  1 samb1s7 samb1s7    5 вер 20 01:33 .vboxclient-seamless.pid
+-rw-r-----  1 samb1s7 samb1s7    5 вер 20 01:33 .vboxclient-draganddrop.pid
+-rw-r-----  1 samb1s7 samb1s7    5 вер 20 01:33 .vboxclient-display-svga-x11.pid
+-rw-r-----  1 samb1s7 samb1s7    5 вер 20 01:33 .vboxclient-clipboard.pid
+drwxrwxr-x  2 samb1s7 samb1s7 4096 вер 19 19:59 Templates
+-rw-rw-r--  1 samb1s7 samb1s7    0 вер 19 20:22 .sudo_as_admin_successful
+drwxrwxr-x  2 samb1s7 samb1s7 4096 вер 19 20:19 .ssh
+drwxrwxr-x  5 samb1s7 samb1s7 4096 вер 19 23:14 snap
+lrwxrwxrwx  1 samb1s7 samb1s7   16 вер 19 20:40 Shared -> /media/sf_Shared
+drwxrwxr-x  3 samb1s7 samb1s7 4096 вер 19 23:16 PycharmProjects
+drwxrwxr-x  2 samb1s7 samb1s7 4096 вер 19 19:59 Public
+-rw-rw-r--  1 samb1s7 samb1s7  807 вер 19 19:48 .profile
+drwxrwxr-x  2 samb1s7 samb1s7 4096 вер 19 19:59 Pictures
+drwxrwxr-x  2 samb1s7 samb1s7 4096 вер 19 19:59 Music
+drwxrwxr-x  5 samb1s7 samb1s7 4096 вер 19 20:26 .mozilla
+drwxrwxr-x  3 samb1s7 samb1s7 4096 вер 19 19:59 .local
+drwxrwxr-x  4 samb1s7 samb1s7 4096 вер 19 23:03 linux_lecture
+drwxrwxr-x  4 samb1s7 samb1s7 4096 вер 19 23:14 .java
+drwxrwxr-x  3 samb1s7 samb1s7 4096 вер 19 23:10 .gnupg
+-rw-rw-r--  1 samb1s7 samb1s7   55 вер 19 23:26 .gitconfig
+drwxrwxr-x  2 samb1s7 samb1s7 4096 вер 19 19:59 Downloads
+drwxrwxr-x  2 samb1s7 samb1s7 4096 вер 19 19:59 Documents
+drwxr-xr-x  2 samb1s7 samb1s7 4096 вер 19 19:59 Desktop
+drwxrwxr-x 14 samb1s7 samb1s7 4096 вер 19 23:14 .config
+drwxrwxr-x 15 samb1s7 samb1s7 4096 вер 19 23:14 .cache
+-rw-rw-r--  1 samb1s7 samb1s7 3771 вер 19 19:48 .bashrc
+-rw-rw-r--  1 samb1s7 samb1s7  220 вер 19 19:48 .bash_logout
+-rw-rw-r--  1 samb1s7 samb1s7 4096 вер 20 01:28 .bash_history
+drwxr-xr-x  3 root    root    4096 вер 19 19:48 ..
+drwxrwxr-x 20 samb1s7 samb1s7 4096 вер 20 01:34 .
+
+5*. Rename the file notes.txt to new_notes.txt
+Hint: Renaming is done using the same command as moving.
+
+samb1s7@PCubuntu:~$ mv notes.txt new_test.txt
+
+6. Remove the files linux_lecture/notes.txt and new_notes.txt. Note that your answer must be a single command and not multiple commands.
+Hint: Many commands can accept more than one parameter.
+
+samb1s7@PCubuntu:~$ rm new_test.txt -r linux_lecture/
+
+Create homework.sh file under linux_lecture directory
+
+samb1s7@PCubuntu:~$ mkdir linux_lecture
+samb1s7@PCubuntu:~$ touch homework.sh
+
+7*. Set the file homework.sh to have a last-modified date of January 1, 2020, 4:15am.
+Hint: The man page for the proper command describes the timestamp 'STAMP' format to use. Look for this!
+Also note: Linux is case-sensitive when you are specifying file or directory names.
+You can use a * (asterisk) as a “wild-card” character to specify a group of files.
+For example, *foo means all files whose names end with foo, and foo* means all files whose names begin with foo.
+You can use a wildcard in the middle of a file name, such as foo*bar for all files that start with foo and end with bar.
+
+samb1s7@PCubuntu:~$ touch -t 202001010415.00 homework.sh 
+
+Create hw.sh, hw1.sh, hw2.sh, hw1.txt under the linux_lecture directory
+
+samb1s7@PCubuntu:~$ touch hw2.sh hw1.txt hw.sh hw1.sh
+
+8. Find all the files only with the extension .txt in the current directory.
+
+samb1s7@PCubuntu:~/linux_lecture$ ls *txt
+
+9. Copy all the text files (files whose names end with .txt) from the current folder to the new directory `lecture_new`
+
+samb1s7@PCubuntu:~/linux_lecture$ cp *txt lecture_new/
+
+10. Write `echo 'linux_lecture'` to the homework.sh file by using echo.
+
+samb1s7@PCubuntu:~/linux_lecture$ echo 'echo 'linux_lecture''>homework.sh
+
+11. Display the contents of homework.sh
+
+samb1s7@PCubuntu:~/linux_lecture$ cat homework.sh 
+
+
+12. Change the permissions to just write for current user and try to Display contents again.
+
+samb1s7@PCubuntu:~/linux_lecture$ chmod 277 homework.sh 
+samb1s7@PCubuntu:~/linux_lecture$ cat homework.sh
+
+13. Change the permission to rwx for current user only and try again.
+
+samb1s7@PCubuntu:~/linux_lecture$ chmod 700 homework.sh
+
+13a. Execute the homework.sh
+
+samb1s7@PCubuntu:~/linux_lecture$ ./homework.sh
+
+
+14. Write from 1 to 10 in each line in homework.sh by using text reader.
+🔍 Self Discovery: The head and tail commands output only the first or last few lines (respectively) of a file to the terminal.
+
+samb1s7@PCubuntu:~/linux_lecture$ nano homework.sh
+
+15. Display only the first 7 lines of the file homework.sh from the current directory on the terminal.
+
+samb1s7@PCubuntu:~/linux_lecture$ head -n 7 homework.sh
+
+16*. Create notes.sh with `ls` and make it executable
+
+samb1s7@PCubuntu:~/linux_lecture$ touch notes.sh
+samb1s7@PCubuntu:~/linux_lecture$ echo  "echo 'ls'"> notes.sh
+samb1s7@PCubuntu:~/linux_lecture$ chmod +x notes.sh
+
+17*. Execute notes.sh
+samb1s7@PCubuntu:~/linux_lecture$ ./notes.sh

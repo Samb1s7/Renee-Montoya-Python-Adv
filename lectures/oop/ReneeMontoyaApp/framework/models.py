@@ -5,13 +5,14 @@ import json
 class Model(ABC):
     file = 'default.json'
 
-    @abstractmethod
     def save(self):
-        pass
+        in_dict_format = self._generate_dict()
+        info = self.get_file_data(self.file)
+        info.append(in_dict_format)
+        self.save_to_file(info)
 
-    @abstractmethod
     def _generate_dict(self):
-        pass
+        return self.__dict__
 
     @classmethod
     def get_by_id(cls, id):
@@ -19,6 +20,15 @@ class Model(ABC):
         for el in data:
             if el['id'] == id:
                 return el
+
+        raise Exception("Not found")
+
+    @classmethod
+    def get_by_email(cls, email):
+        data = cls.get_file_data(cls.file)
+        for el in data:
+            if el['email'] == email:
+                return el['id']
 
         raise Exception("Not found")
 
