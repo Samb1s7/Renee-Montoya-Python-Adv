@@ -1,0 +1,11 @@
+mysql> CREATE TABLE phones(id INT PRIMARY KEY AUTO_INCREMENT, phone_name CHAR(255), company_id INT, user_id INT);
+mysql> CREATE TABLE phone_companies(id INT PRIMARY KEY AUTO_INCREMENT, name CHAR(255));
+mysql> SELECT * FROM users WHERE is_developer=1;
+mysql> INSERT INTO phone_companies (name) VALUES ("Xiaomi");
+mysql> INSERT INTO phone_companies (name) VALUES ("Apple");
+mysql> INSERT INTO phone_companies (name) VALUES ("Samsung");
+mysql> INSERT INTO phones (phone_name, company_id, user_ID) VALUES ("Iphone X", 2,1);
+mysql> INSERT INTO phones (phone_name, company_id, user_ID) VALUES ("Galaxy", 3,2);
+mysql> INSERT INTO phones (phone_name, company_id, user_ID) VALUES ("Meizu", 1,3);
+mysql> SELECT * FROM phones WHERE company_id=1;
+mysql> SELECT * FROM users INNER JOIN phones ON users.id = phones.user_id;
